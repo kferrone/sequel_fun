@@ -1,0 +1,29 @@
+{
+  "name": "sequel-fun",
+  "version": "1.0.0",
+  "description": "Simple TS sequelize project",
+  "main": "src/index.ts",
+  "types": "src/types.d.ts",
+  "engine": {
+    "node": "^10.8.0"
+  },
+  "scripts": {
+    "start": "NODE_ENV=dev ts-node --files -P tsconfig.json src"
+  },
+  "author": "kferrone",
+  "license": "ISC",
+  "dependencies": {
+    "sequelize": "^4.38.0",
+    "sequelize-typescript": "^0.6.6",
+    "mysql2": "^1.6.1",
+    "reflect-metadata": "^0.1.12"
+  },
+  "devDependencies": {
+    "@types/node": "^9.6.0",
+    "@types/npm": "^2.0.29",
+    "@types/sequelize": "^4.27.24",
+    "@types/lodash": "^4.14.116",
+    "ts-node": "^5.0.1",
+    "typescript": "^2.8.1"
+  }
+}

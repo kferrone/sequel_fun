@@ -1,0 +1,11 @@
+{
+	"host": "localhost",
+	"database": "sequel_fun",
+	"username": "root",
+	"password": "ubermacro",
+	"dialect": "mysql",
+	"define": {
+		"underscored": true,
+		"underscoredAll": true
+	}
+}
