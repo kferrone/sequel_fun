@@ -2,7 +2,7 @@
 	"host": "localhost",
 	"database": "sequel_fun",
 	"username": "root",
-	"password": "ubermacro",
+	"password": "password",
 	"dialect": "mysql",
 	"define": {
 		"underscored": true,

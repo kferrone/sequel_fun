@@ -1,7 +1,19 @@
-# codemix-vanilla-typescript
+# Typescript Sequelize Example
 
-Template for project creation of Typescript inside CodeMix
+A simple example of using Typescript and Sequelize
 
-## Contents
+## Prerequisites
 
-This template project is just an example Hello World that guide you through the use of typescript and nodejs to build a very simple console application that display a Hello World!!! Greeting
+ - MySQL is installed with a db called `sequel_fun`
+ - The config has proper credentials for the db
+ - NodeJS: ^10.8.0
+ 
+## Installation and Running
+
+simply run the following commands to get started. 
+
+`npm install`
+
+then 
+
+`npm start`
