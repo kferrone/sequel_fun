@@ -13,7 +13,7 @@
   "author": "kferrone",
   "license": "ISC",
   "dependencies": {
-    "sequelize": "^4.38.0",
+    "sequelize": "next",
     "sequelize-typescript": "^0.6.6",
     "mysql2": "^1.6.1",
     "reflect-metadata": "^0.1.12"
