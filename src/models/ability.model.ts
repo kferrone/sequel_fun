@@ -57,9 +57,6 @@ export default class Ability extends Model<Ability> {
   /**
    * A list of super powered contacts who possess a certain ability. 
    */
-  /*@BelongsToMany(() => Contact,{
-    through: 'ContactAbility',
-    otherKey: 'abilityID'
-  })
+  /*@BelongsToMany(() => Contact,() => ContactAbility, 'abilityID', 'contactID')
   public contacts: Contact[];*/
 }
