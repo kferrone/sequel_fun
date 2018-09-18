@@ -8,7 +8,10 @@
     "node": "^10.8.0"
   },
   "scripts": {
-    "start": "NODE_ENV=dev ts-node --files -P tsconfig.json src"
+    "preinstall": "mkdir -p schemas",
+    "start": "NODE_ENV=dev ts-node --files -P tsconfig.json src",
+    "tsj:seeds": "typescript-json-schema ./tsconfig.json -o schemas/seeder.json SeederFile",
+    "tsj:config": "typescript-json-schema ./tsconfig.json -o schemas/config.json SequelConfig"
   },
   "author": "kferrone",
   "license": "ISC",
@@ -19,11 +22,12 @@
     "reflect-metadata": "^0.1.12"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.116",
     "@types/node": "^9.6.0",
     "@types/npm": "^2.0.29",
     "@types/sequelize": "^4.27.24",
-    "@types/lodash": "^4.14.116",
     "ts-node": "^5.0.1",
-    "typescript": "^2.8.1"
+    "typescript": "^2.8.1",
+    "typescript-json-schema": "^0.32.0"
   }
 }

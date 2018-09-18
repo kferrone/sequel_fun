@@ -1,5 +1,12 @@
 declare type lodash = typeof import('lodash' );
 
+declare interface SeederFile {
+	guild: mdl.Guild[];
+	ability: mdl.Ability[];
+	contact: mdl.Contact[];
+	key: mdl.Key[];
+}
+
 declare namespace mdl {
 	export type Model<T> = import( 'sequelize' ).Model<T, {}>;
 	export type Contact = import( 'models' ).Contact;

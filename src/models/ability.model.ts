@@ -1,7 +1,8 @@
 /**
  * @author Kelly Ferrone
  */
-import {Contact, ContactAbility} from "./";
+import ContactAbility from "./contactAbility.model";
+import Contact from './contact.model';
 import {Table, Column, Model, DataType, PrimaryKey, Comment, Is, BelongsToMany} from 'sequelize-typescript';
 
 /**
@@ -57,6 +58,6 @@ export default class Ability extends Model<Ability> {
   /**
    * A list of super powered contacts who possess a certain ability. 
    */
-  /*@BelongsToMany(() => Contact,() => ContactAbility, 'abilityID', 'contactID')
-  public contacts: Contact[];*/
+  @BelongsToMany(() => Contact,() => ContactAbility, 'abilityID', 'contactID')
+  public contacts: Contact[];
 }
