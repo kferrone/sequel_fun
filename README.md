@@ -17,3 +17,11 @@ simply run the following commands to get started.
 then 
 
 `npm start`
+
+## Schema Generator
+
+**Seeder file schema**  
+`npm run tsj:seeds`  
+
+**Config File Schema**  
+`npm run tsj:config`  
